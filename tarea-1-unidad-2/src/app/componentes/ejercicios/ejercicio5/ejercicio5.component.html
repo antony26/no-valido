@@ -1,0 +1,12 @@
+<h1>Ejercicio 5</h1>
+<form #formularioProducto class="form">
+  <div class="from-group">
+    <label for="producto">Producto</label><br>
+    <select name="producto" id="producto" (change)="cambioProductoHandler($event)">
+      <input [(ngModel)]="producto" (keyup)="cambioDeprodctoHandler($event)" name=""="produto" id="producto" type="text" class="form-control">
+      <option *ngFor="let producto of productos" value={{producto.precio}}></option>
+    </select>
+  
+  </div>
+  <p><strong>precio</strong></p>
+</form>
