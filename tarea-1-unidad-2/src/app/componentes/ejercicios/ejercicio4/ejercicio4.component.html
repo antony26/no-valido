@@ -1,0 +1,9 @@
+<h1>Ejercicio 4</h1>
+<form #formularioTweet class="form">
+
+  <div class="from-group">
+    <label for="tweet">Tweet</label><br>
+    <input [(ngModel)]="tweet" (keyup)="cambioDeTweetHandler($event)" name="tweet" id="tweet" type="text" class="form-control">
+  </div>
+  
+</form>

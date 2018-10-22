@@ -1,0 +1,11 @@
+<h3>Ejercicio 6</h3>
+<form #formularioConversor class="form">
+  <div class="from-group">
+    <label for="celcius">Celcius</label><br>
+    <input [(ngModel)]="celcius" (keyup)="calcularFahrenheit($event)" name="celcius" id="celcius" type="number" class="form-control">
+  </div>
+  <div class="from-group">
+    <label for="fahrenheit">Fahrenheit</label><br>
+    <input [(ngModel)]="fahrenheit" (keyup)="calcularCelcius($event)"   name="fahrenheit" id="fahrenheit" type="number" class="form-control">
+  </div>
+</form>
